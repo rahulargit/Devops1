@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        p{
+            text-align: center;
+            font-size: 30px;
+            color:white;
+        }
+
+        .form{
+            text-align: center;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Hii, this is the my first api frontend<br>
+        Today is {{day_of_week}}
+        Current Time is {{current_time}}
+
+        <div class="form">
+            <form action="/submit" method="post">
+                <label for="name" class="Name">Name</label>
+                <input type="text" id="name" name="name" placeholder="enter your name">
+                <br>
+                <label for="EMAIL" class="EMAIL">EMAIL</label>
+                <input type="text" id="EMAIL" name="EMAIL" placeholder="enter your EMAIL">
+                <br>
+                <label for="Password" class="Password">Password</label>
+                <input type="text" id="Password" name="Password" placeholder="enter your Password">
+                <br>
+                <input type="submit" value="submit">
+            </form>
+            <form action="/get_data" method="get">
+                <input type="submit" value="view data">
+            </form>
+        </div>
+    </p>
+</body>
+</html>

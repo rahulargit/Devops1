@@ -1,0 +1,4 @@
+flask
+Pymongo
+dnspython
+python-dotenv
